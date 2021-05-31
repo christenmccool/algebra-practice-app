@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block title %}Graphing Lines{% endblock %}
+
+{% block heading %}{% endblock %}
+
+{% block main %}
+
+<div class="text-end m-2">
+    <span class="m-2" id="correct-text">Correct: 0</span>
+    <span id="incorrect-text">Incorrect: 0</span>
+</div>
+
+<h3 class="text-center mt-2">Graph the following line.</h3>
+<p class="text-3 text-center">Plot the points by clicking on the grid. After plotting all points, press "draw line".</h3>
+
+<h2 class="text-center"><span id="linear-eq"></span></h2>
+
+<div id="calculator"></div>
+
+<div class="d-grid gap-2 col-4 mx-auto">
+    <button class="btn btn-secondary m-3" role="button" id="draw-line">Draw line</a>
+</div>
+
+<div class="d-grid gap-2 col-4 mx-auto">
+    <button class="btn btn-primary m-3 d-none" role="button" id="check-button">Check</a>
+</div>
+
+<div class="d-grid gap-2 col-4 mx-auto">
+    <button class="btn btn-secondary m-3 d-none" role="button" id="new-line-button">New line</a>
+</div>
+    
+<h3 class="text-center mt-2" id="message"></h3>
+
+
+
+<script src="/static/math.js"></script>
+<script src="/static/graphs.js"></script>
+
+{% endblock %}
+

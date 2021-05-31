@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block title %}Graphing Lines{% endblock %}
+
+{% block heading %}{% endblock %}
+
+{% block main %}
+
+<div class="text-end m-2">
+    <span class="m-2" id="correct-text">Correct: 0</span>
+    <span id="incorrect-text">Incorrect: 0</span>
+</div>
+
+<h3 class="text-center mt-2">Type the equation from the following graph.</h3>
+
+<div class="d-grid gap-2 col-3 mx-auto">
+    <button class="btn btn-secondary p-1 m-1" role="button" id="show-points-button">Show points</a>
+</div>
+
+<div id="calculator"></div>
+
+<h2 class="text-center"><span id="user-eq"></span></h2>
+
+<div class="d-grid gap-2 col-4 mx-auto">
+    <button class="btn btn-primary m-1" role="button" id="check-button">Check</a>
+</div>
+    
+<h3 class="text-center mt-2" id="message"></h3>
+<h2 class="text-center"><span id="answer"></span></h2>
+
+<div class="d-grid gap-2 col-4 mx-auto">
+    <button class="btn btn-primary m-1 d-none" role="button" id="new-line-button">New line</a>
+</div>
+
+<script src="/static/math.js"></script>
+<script src="/static/eq-graphs.js"></script>
+
+{% endblock %}
+
